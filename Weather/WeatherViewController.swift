@@ -4,10 +4,11 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+final class WeatherViewController: UIViewController {
+    
+    var viewModel: WeatherViewModelType!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
 }
-

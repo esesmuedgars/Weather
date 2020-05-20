@@ -8,10 +8,17 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var window: UIWindow?
-
+    private var coordinator: FlowCoordinator?
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
-        true
+        window = UIWindow(frame: UIScreen.main.bounds)
+    
+        coordinator = AppFlowCoordinator(window: window)
+        coordinator?.startRootController()
+        
+        window?.makeKeyAndVisible()
+        
+        return true
     }
 }
 

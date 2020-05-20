@@ -8,11 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		72B99484247588BD00A75010 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B99483247588BD00A75010 /* AppDelegate.swift */; };
-		72B99488247588BD00A75010 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B99487247588BD00A75010 /* ViewController.swift */; };
+		72B99488247588BD00A75010 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B99487247588BD00A75010 /* WeatherViewController.swift */; };
 		72B9948B247588BD00A75010 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72B99489247588BD00A75010 /* Main.storyboard */; };
 		72B9948D247588BE00A75010 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72B9948C247588BE00A75010 /* Assets.xcassets */; };
 		72B99490247588BE00A75010 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72B9948E247588BE00A75010 /* LaunchScreen.storyboard */; };
 		72B9949B247588BE00A75010 /* WeatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B9949A247588BE00A75010 /* WeatherTests.swift */; };
+		72B994A62475999600A75010 /* AppFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B994A52475999600A75010 /* AppFlowCoordinator.swift */; };
+		72B994A824759B0400A75010 /* WeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B994A724759B0400A75010 /* WeatherViewModel.swift */; };
+		72B994AA24759B3800A75010 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B994A924759B3800A75010 /* APIService.swift */; };
+		72B994AC24759B6300A75010 /* GPSService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B994AB24759B6300A75010 /* GPSService.swift */; };
+		72B994AE2475A8FC00A75010 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B994AD2475A8FC00A75010 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +33,7 @@
 /* Begin PBXFileReference section */
 		72B99480247588BD00A75010 /* Weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72B99483247588BD00A75010 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		72B99487247588BD00A75010 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		72B99487247588BD00A75010 /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
 		72B9948A247588BD00A75010 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		72B9948C247588BE00A75010 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		72B9948F247588BE00A75010 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +41,11 @@
 		72B99496247588BE00A75010 /* WeatherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		72B9949A247588BE00A75010 /* WeatherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherTests.swift; sourceTree = "<group>"; };
 		72B9949C247588BE00A75010 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		72B994A52475999600A75010 /* AppFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFlowCoordinator.swift; sourceTree = "<group>"; };
+		72B994A724759B0400A75010 /* WeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
+		72B994A924759B3800A75010 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		72B994AB24759B6300A75010 /* GPSService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPSService.swift; sourceTree = "<group>"; };
+		72B994AD2475A8FC00A75010 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +88,12 @@
 			isa = PBXGroup;
 			children = (
 				72B99483247588BD00A75010 /* AppDelegate.swift */,
-				72B99487247588BD00A75010 /* ViewController.swift */,
+				72B994A52475999600A75010 /* AppFlowCoordinator.swift */,
+				72B99487247588BD00A75010 /* WeatherViewController.swift */,
+				72B994A724759B0400A75010 /* WeatherViewModel.swift */,
+				72B994A924759B3800A75010 /* APIService.swift */,
+				72B994AB24759B6300A75010 /* GPSService.swift */,
+				72B994AD2475A8FC00A75010 /* Extensions.swift */,
 				72B99489247588BD00A75010 /* Main.storyboard */,
 				72B9948C247588BE00A75010 /* Assets.xcassets */,
 				72B9948E247588BE00A75010 /* LaunchScreen.storyboard */,
@@ -197,8 +212,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				72B99488247588BD00A75010 /* ViewController.swift in Sources */,
+				72B99488247588BD00A75010 /* WeatherViewController.swift in Sources */,
+				72B994AA24759B3800A75010 /* APIService.swift in Sources */,
+				72B994AC24759B6300A75010 /* GPSService.swift in Sources */,
+				72B994A824759B0400A75010 /* WeatherViewModel.swift in Sources */,
+				72B994A62475999600A75010 /* AppFlowCoordinator.swift in Sources */,
 				72B99484247588BD00A75010 /* AppDelegate.swift in Sources */,
+				72B994AE2475A8FC00A75010 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
