@@ -4,13 +4,15 @@
 
 import Foundation
 
-struct WeatherForecast: Decodable {
+struct WeatherForecast {
     let latitude: Double
     let longitude: Double
     let description: String?
     let icon: String?
     let temperature: Double?
-    
+}
+
+extension WeatherForecast: Decodable {
     private enum CodingKeys: String, CodingKey {
         case latitude
         case longitude
@@ -49,7 +51,7 @@ extension WeatherForecast {
             .init(name: "exclude", value: "minutely,hourly,daily,alerts,flags"),
             .init(name: "units", value: "auto")
         ]
-
+        
         return components?.url
     }
 }
