@@ -34,6 +34,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7220F7322479D3E3005900C2 /* Klarna, Stockholm, Sweden.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Klarna, Stockholm, Sweden.gpx"; sourceTree = "<group>"; };
 		7220F7332479DA9F005900C2 /* WeatherForecast+URL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WeatherForecast+URL.swift"; sourceTree = "<group>"; };
 		7235F85E247C51B6008F1B42 /* UIWeatherForecast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIWeatherForecast.swift; sourceTree = "<group>"; };
 		72B99480247588BD00A75010 /* Weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weather.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -107,6 +108,7 @@
 				72B9948C247588BE00A75010 /* Assets.xcassets */,
 				72B9948E247588BE00A75010 /* LaunchScreen.storyboard */,
 				72B99491247588BE00A75010 /* Info.plist */,
+				7220F7322479D3E3005900C2 /* Klarna, Stockholm, Sweden.gpx */,
 			);
 			path = Weather;
 			sourceTree = "<group>";
