@@ -1,7 +1,7 @@
 # Weather
 
 #### Technical assignment for iOS developer role at [Klarna](https://www.klarna.com/).
-- [Technical requirements document](https://gist.github.com/gbanfalvikl/3571c15b65794c06dcc3e35b04928870).
+- [Technical requirements document](https://github.com/esesmuedgars/Weather/blob/master/RequirementsDocument.md).
 
 ## Installation
 
