@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7220F7342479DA9F005900C2 /* WeatherForecast+URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7220F7332479DA9F005900C2 /* WeatherForecast+URL.swift */; };
 		72B99484247588BD00A75010 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B99483247588BD00A75010 /* AppDelegate.swift */; };
 		72B99488247588BD00A75010 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B99487247588BD00A75010 /* WeatherViewController.swift */; };
 		72B9948B247588BD00A75010 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72B99489247588BD00A75010 /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 		72B994AA24759B3800A75010 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B994A924759B3800A75010 /* APIService.swift */; };
 		72B994AC24759B6300A75010 /* GPSService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B994AB24759B6300A75010 /* GPSService.swift */; };
 		72B994AE2475A8FC00A75010 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B994AD2475A8FC00A75010 /* Extensions.swift */; };
+		72B994B02475BDAF00A75010 /* Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B994AF2475BDAF00A75010 /* Dependencies.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +33,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7220F7332479DA9F005900C2 /* WeatherForecast+URL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WeatherForecast+URL.swift"; sourceTree = "<group>"; };
 		72B99480247588BD00A75010 /* Weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72B99483247588BD00A75010 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		72B99487247588BD00A75010 /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
@@ -46,6 +49,7 @@
 		72B994A924759B3800A75010 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		72B994AB24759B6300A75010 /* GPSService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPSService.swift; sourceTree = "<group>"; };
 		72B994AD2475A8FC00A75010 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		72B994AF2475BDAF00A75010 /* Dependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dependencies.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,8 +95,10 @@
 				72B994A52475999600A75010 /* AppFlowCoordinator.swift */,
 				72B99487247588BD00A75010 /* WeatherViewController.swift */,
 				72B994A724759B0400A75010 /* WeatherViewModel.swift */,
+				7220F7332479DA9F005900C2 /* WeatherForecast+URL.swift */,
 				72B994A924759B3800A75010 /* APIService.swift */,
 				72B994AB24759B6300A75010 /* GPSService.swift */,
+				72B994AF2475BDAF00A75010 /* Dependencies.swift */,
 				72B994AD2475A8FC00A75010 /* Extensions.swift */,
 				72B99489247588BD00A75010 /* Main.storyboard */,
 				72B9948C247588BE00A75010 /* Assets.xcassets */,
@@ -212,10 +218,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7220F7342479DA9F005900C2 /* WeatherForecast+URL.swift in Sources */,
 				72B99488247588BD00A75010 /* WeatherViewController.swift in Sources */,
 				72B994AA24759B3800A75010 /* APIService.swift in Sources */,
 				72B994AC24759B6300A75010 /* GPSService.swift in Sources */,
 				72B994A824759B0400A75010 /* WeatherViewModel.swift in Sources */,
+				72B994B02475BDAF00A75010 /* Dependencies.swift in Sources */,
 				72B994A62475999600A75010 /* AppFlowCoordinator.swift in Sources */,
 				72B99484247588BD00A75010 /* AppDelegate.swift in Sources */,
 				72B994AE2475A8FC00A75010 /* Extensions.swift in Sources */,

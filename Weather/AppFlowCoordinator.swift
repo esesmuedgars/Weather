@@ -17,13 +17,7 @@ final class AppFlowCoordinator: FlowCoordinator {
     init(window: UIWindow?) {
         self.window = window
     }
-    
-    func startRootController() {
-        setRootWeatherViewController()
         
-        window?.rootViewController = navigationController
-    }
-    
     private func setRootWeatherViewController() {
         let viewController = storyboard.instantiateViewController(
             ofType: WeatherViewController.self
@@ -32,7 +26,17 @@ final class AppFlowCoordinator: FlowCoordinator {
         let viewModel = WeatherViewModel()
         viewController.viewModel = viewModel
         
-        navigationController = UINavigationController(rootViewController: viewController)
+        navigationController = UINavigationController(
+            rootViewController: viewController
+        )
         navigationController?.setNavigationBarHidden(true, animated: false)
+    }
+    
+    // MARK: - FlowCoordinator
+    
+    func startRootController() {
+        setRootWeatherViewController()
+        
+        window?.rootViewController = navigationController
     }
 }
